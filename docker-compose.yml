@@ -13,8 +13,8 @@ services:
       - '3306:3306'
     environment:
       - MARIADB_USER=testlink
-      - MARIADB_PASSWORD=Balidea2023.
-      - MARIADB_ROOT_PASSWORD=Balidea2023.
+      - MARIADB_PASSWORD=testlink
+      - MARIADB_ROOT_PASSWORD=mariadb
       - MARIADB_DATABASE=testlink
     volumes:
       - ./database/mariadb_data:/bitnami/mariadb
@@ -33,7 +33,7 @@ services:
       - TESTLINK_DATABASE_PORT_NUMBER=3306
       - TESTLINK_DATABASE_USER=testlink
       - TESTLINK_DATABASE_NAME=testlink
-      - TESTLINK_DATABASE_PASSWORD=Balidea2023.
+      - TESTLINK_DATABASE_PASSWORD=testlink
     volumes:
       - ./database/testlink_data:/bitnami/testlink
     depends_on:
