@@ -153,7 +153,9 @@ This requires a minor change to the [`docker-compose.yml`](https://github.com/bi
 -    driver: local
 ```
 
+
 > NOTE: As this is a non-root container, the mounted files and directories must have the proper permissions for the UID `1001`.
+https://techwetrust.com/how-to/docker/how-to-solvecannot-create-directory-permission-denied-error-on-a-docker-container/
 
 ### Mount host directories as data volumes using the Docker command line
 
