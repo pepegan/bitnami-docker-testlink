@@ -23,7 +23,6 @@ ENV APP_VERSION="10.8.3" \
     PATH="/opt/bitnami/common/bin:/opt/bitnami/mariadb/bin:/opt/bitnami/mariadb/sbin:$PATH"
 
 EXPOSE 3306
-
 ENV TZ=Europe/Madrid
 
 USER 1001

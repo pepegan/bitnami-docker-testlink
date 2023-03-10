@@ -65,6 +65,23 @@ If you wish, you can also build the image yourself.
 $ docker build -t bitnami/testlink:latest 'https://github.com/bitnami/bitnami-docker-testlink.git#master:1/debian-10'
 ```
 
+If you wish, you can create custom images also build the image yourself with the Dockerfiles in **1/debian-10**.
+
+The original images were extracted from dockerhub: [MariaDB](https://hub.docker.com/r/bitnami/mariadb/dockerfile) y [Testlink](https://hub.docker.com/r/bitnami/testlink/dockerfile)
+
+```console
+$ cd 1/debian-10
+```
+To generate testlink custom image.
+```console
+$ docker build -t bitnami-testlink:latest -f Dockerfile_testlink .
+```
+
+To generate mariadb custom image.
+```console
+$ docker build -t bitnami-mariadb:latest -f Dockerfile_mariadb .
+```
+
 ## How to use this image
 
 TestLink requires access to a MySQL or MariaDB database to store information. We'll use the [Bitnami Docker Image for MariaDB](https://www.github.com/bitnami/bitnami-docker-mariadb) for the database requirements.

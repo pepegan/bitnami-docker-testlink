@@ -20,4 +20,5 @@ if [[ ! -f "/bitnami/testlink/.user_scripts_initialized" && -d "/docker-entrypoi
     fi
 
     touch "/bitnami/testlink/.user_scripts_initialized"
+    chmod 777 -R "/bitnami/testlink/"
 fi
